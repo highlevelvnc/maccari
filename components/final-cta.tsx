@@ -2,7 +2,7 @@ import { waLink, WA_MESSAGES, BRAND } from '@/lib/constants'
 
 export default function FinalCta() {
   return (
-    <section id="contacto" className="cta-bg py-24 md:py-32 relative overflow-hidden">
+    <section className="cta-bg py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-40 pointer-events-none" aria-hidden="true" />
 
       {/* Ambient amber glow center */}

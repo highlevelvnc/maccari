@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { waLink, WA_MESSAGES } from '@/lib/constants'
 
 export default function Navbar() {
@@ -22,6 +23,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Serviços', href: '#servicos' },
     { label: 'Porquê Maccari', href: '#porque-maccari' },
+    { label: 'O Fundador', href: '#fundador' },
     { label: 'Contacto', href: '#contacto' },
   ]
 
@@ -48,16 +50,26 @@ export default function Navbar() {
 
       <div className="max-w-[1280px] mx-auto px-5 md:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-none group" aria-label="Maccari Engenharia - início">
-          <span
-            className="text-white font-black tracking-tight text-xl transition-colors duration-200 group-hover:text-amber-400"
-            style={{ fontWeight: 900, letterSpacing: '-0.025em' }}
-          >
-            MACCARI
-          </span>
-          <span className="text-[9px] font-semibold tracking-[0.22em] uppercase transition-colors duration-200 group-hover:text-amber-500/80" style={{ color: 'rgba(245,158,11,0.55)' }}>
-            ENGENHARIA &amp; INSTALAÇÕES
-          </span>
+        <a href="#" className="flex items-center gap-2 group" aria-label="Maccari Engenharia - início">
+          <Image
+            src="/logo.png"
+            alt="Maccari Engenharia"
+            width={36}
+            height={36}
+            className="object-contain transition-opacity duration-200 group-hover:opacity-90"
+            priority
+          />
+          <div className="flex flex-col leading-none">
+            <span
+              className="text-white font-black tracking-tight text-xl transition-colors duration-200 group-hover:text-amber-400"
+              style={{ fontWeight: 900, letterSpacing: '-0.025em' }}
+            >
+              MACCARI
+            </span>
+            <span className="text-[9px] font-semibold tracking-[0.22em] uppercase transition-colors duration-200 group-hover:text-amber-500/80" style={{ color: 'rgba(245,158,11,0.55)' }}>
+              ENGENHARIA &amp; INSTALAÇÕES
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}

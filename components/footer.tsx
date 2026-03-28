@@ -1,4 +1,5 @@
-import { BRAND, SERVICES, waLink, WA_MESSAGES } from '@/lib/constants'
+import Image from 'next/image'
+import { BRAND, CREDENTIALS, SERVICES, waLink, WA_MESSAGES } from '@/lib/constants'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -10,49 +11,32 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Col 1 — Brand */}
           <div>
-            <div className="flex flex-col leading-none mb-5">
-              <span className="text-white font-black tracking-tight text-xl" style={{ letterSpacing: '-0.02em' }}>
-                MACCARI
-              </span>
-              <span className="text-amber-500/50 text-[10px] font-medium tracking-widest uppercase mt-0.5" style={{ letterSpacing: '0.18em' }}>
-                ENGENHARIA &amp; INSTALAÇÕES
-              </span>
+            <div className="flex items-center gap-2.5 mb-5">
+              <Image src="/logo.png" alt="Maccari Engenharia" width={40} height={40} className="object-contain" />
+              <div className="flex flex-col leading-none">
+                <span className="text-white font-black tracking-tight text-xl" style={{ letterSpacing: '-0.02em' }}>MACCARI</span>
+                <span className="text-amber-500/50 text-[10px] font-medium tracking-widest uppercase mt-0.5" style={{ letterSpacing: '0.18em' }}>ENGENHARIA &amp; INSTALAÇÕES</span>
+              </div>
             </div>
-            <p className="text-[#94A3B8] text-sm mb-5" style={{ lineHeight: 1.7, maxWidth: '32ch' }}>
-              Engenheiro eletrotécnico certificado pela DGEG e membro da Ordem dos Engenheiros. Soluções elétricas com rigor técnico e responsabilidade formal.
+            <p className="text-[#94A3B8] text-sm mb-4" style={{ lineHeight: 1.7, maxWidth: '32ch' }}>
+              Engenheiro eletrotécnico credenciado, membro da Ordem dos Engenheiros. Instalações elétricas, telecomunicações e energias renováveis com rigor técnico formal.
             </p>
 
-            {/* Cert badges */}
-            <div className="flex flex-wrap gap-2 mb-5">
-              <span className="badge-cert">
-                <span
-                  style={{
-                    width: 6,
-                    height: 6,
-                    borderRadius: '50%',
-                    background: '#10B981',
-                    display: 'inline-block',
-                  }}
-                />
-                DGEG
-              </span>
-              <span className="badge-cert">
-                <span
-                  style={{
-                    width: 6,
-                    height: 6,
-                    borderRadius: '50%',
-                    background: '#10B981',
-                    display: 'inline-block',
-                  }}
-                />
-                Ordem dos Engenheiros
-              </span>
+            {/* Credential badges with numbers */}
+            <div className="flex flex-col gap-1.5 mb-5">
+              {Object.values(CREDENTIALS).map((c) => (
+                <span key={c.label} className="flex items-center gap-2 text-xs" style={{ color: '#64748B' }}>
+                  <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#10B981', display: 'inline-block', flexShrink: 0 }} />
+                  <span style={{ color: '#94A3B8' }}>{c.label}</span>
+                  <span className="font-mono" style={{ color: '#64748B' }}>n.º {c.number}</span>
+                </span>
+              ))}
             </div>
 
-            <p className="text-[#94A3B8] text-xs italic" style={{ lineHeight: 1.6 }}>
-              &ldquo;Engenharia elétrica com rigor, responsabilidade e disponibilidade total.&rdquo;
+            <p className="text-[#64748B] text-xs italic" style={{ lineHeight: 1.6 }}>
+              &ldquo;Para mim, engenharia significa responsabilidade, segurança e confiança.&rdquo;
             </p>
+            <p className="text-[#475569] text-[11px] mt-1">— Evandro Maccari</p>
           </div>
 
           {/* Col 2 — Services */}
@@ -99,12 +83,22 @@ export default function Footer() {
                 {BRAND.phone}
               </a>
 
-              <div className="flex items-center gap-2.5 text-sm text-[#94A3B8]">
+              <a
+                href="mailto:geral@maccariengenharia.pt"
+                className="flex items-center gap-2.5 text-sm text-[#94A3B8] hover:text-[#F8FAFC] transition-colors duration-200"
+              >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                {BRAND.email}
+              </a>
+              <div className="flex items-start gap-2.5 text-sm text-[#94A3B8]">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: 2, flexShrink: 0 }}>
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                {BRAND.location}
+                <span>{BRAND.addressFull}</span>
               </div>
 
               <div className="flex items-center gap-2.5 text-sm">
@@ -145,7 +139,7 @@ export default function Footer() {
             &copy; {year} Maccari Engenharia &amp; Instalações. Todos os direitos reservados.
           </p>
           <p className="text-[#94A3B8] text-xs">
-            Credenciado DGEG · Membro da Ordem dos Engenheiros · São Domingos de Rana, Portugal
+            DGEG 82284 · OE 84420 · ANACOM 84420 · IMPIC 117918-PUB · Cascais, Portugal
           </p>
         </div>
       </div>

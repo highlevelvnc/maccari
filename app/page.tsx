@@ -9,6 +9,8 @@ import EnergyHighlight from '@/components/energy-highlight'
 import Coverage from '@/components/coverage'
 import Testimonials from '@/components/testimonials'
 import AuthorityReel from '@/components/authority-reel'
+import Founder from '@/components/founder'
+import ContactForm from '@/components/contact-form'
 import FinalCta from '@/components/final-cta'
 import Footer from '@/components/footer'
 
@@ -27,6 +29,8 @@ export default function Home() {
         <Coverage />
         <Testimonials />
         <AuthorityReel />
+        <Founder />
+        <ContactForm />
         <FinalCta />
       </main>
       <Footer />

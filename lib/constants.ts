@@ -6,7 +6,19 @@ export const BRAND = {
   phone: '+351 913 973 551',
   phoneRaw: '351913973551',
   whatsappBase: 'https://wa.me/351913973551',
+  email: 'geral@maccariengenharia.pt',
   location: 'São Domingos de Rana, Portugal',
+  address: 'Av. Francisca Lindoso, 44 2D',
+  addressFull: 'Av. Francisca Lindoso, 44 2D, São Domingos de Rana, 2785-451 Cascais',
+  founder: 'Evandro Maccari',
+}
+
+export const CREDENTIALS = {
+  oe: { label: 'Ordem dos Engenheiros', number: '84420' },
+  dgeg: { label: 'DGEG', number: '82284' },
+  anacom: { label: 'ANACOM', number: '84420' },
+  eu: { label: 'Certificação UE', number: 'E1937120' },
+  impic: { label: 'IMPIC', number: '117918-PUB' },
 }
 
 export const WA_MESSAGES = {
@@ -90,23 +102,23 @@ export const TRUST_ITEMS = [
 
 export const PILLARS = [
   {
-    title: 'Certificação com Nome e Número',
-    description: 'Profissional credenciado pela DGEG e membro ativo da Ordem dos Engenheiros. Trabalha com responsabilidade técnica formal — não apenas como prestador de serviços, mas como engenheiro eletrotécnico inscrito.',
+    title: 'Credenciado DGEG n.º 82284',
+    description: 'Autorização formal da Direção-Geral de Energia e Geologia para execução de instalações elétricas em Portugal. Responsabilidade técnica e civil em cada projeto assinado.',
     icon: 'award',
   },
   {
-    title: '20 Anos de Casos Reais',
-    description: 'Duas décadas de trabalho em instalações residenciais, comerciais e industriais em Portugal. Experiência que resolve o que outros não conseguem diagnosticar.',
+    title: 'Ordem dos Engenheiros n.º 84420',
+    description: 'Inscrição ativa na Ordem dos Engenheiros — formação contínua, ética profissional e responsabilidade técnica garantida em cada intervenção residencial, comercial ou industrial.',
     icon: 'calendar',
   },
   {
     title: 'Tecnologia e Inovação Energética',
-    description: 'Do carregamento de veículos elétricos à otimização de sistemas fotovoltaicos — acompanha as exigências técnicas de 2026 sem abdicar do rigor que sempre caracterizou o seu trabalho.',
+    description: 'Do carregamento de veículos elétricos (WallBox) à geração fotovoltaica e infraestruturas ITED — soluções completas com rigor de engenharia e conformidade com as normas europeias.',
     icon: 'zap-circle',
   },
   {
-    title: 'Disponível Quando Precisa',
-    description: 'Emergências elétricas não escolhem hora. Por isso, o atendimento é disponível 24 horas por dia. Resposta rápida, deslocação eficiente, resolução no próprio dia sempre que possível.',
+    title: 'Disponível 24 Horas — Resposta Imediata',
+    description: 'Emergências elétricas não escolhem hora. Atendimento disponível 24h, deslocação rápida e resolução no próprio dia sempre que possível. Sem filas de espera.',
     icon: 'clock',
   },
 ]
