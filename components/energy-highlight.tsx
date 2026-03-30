@@ -152,7 +152,7 @@ export default function EnergyHighlight() {
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
           <a
-            href={waLink(WA_MESSAGES.efficiency)}
+            href={waLink(WA_MESSAGES.solar)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#94A3B8] hover:text-[#F8FAFC] text-sm transition-colors duration-200"

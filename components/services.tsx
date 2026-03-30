@@ -3,10 +3,17 @@ import { SERVICES, waLink } from '@/lib/constants'
 function ServiceIcon({ name, color }: { name: string; color: string }) {
   const stroke = color === 'cyan' ? '#38BDF8' : color === 'green' ? '#10B981' : '#F59E0B'
 
-  if (name === 'zap') {
+  if (name === 'building') {
     return (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        <rect x="4" y="2" width="16" height="20" rx="2" />
+        <line x1="8" y1="6" x2="10" y2="6" />
+        <line x1="14" y1="6" x2="16" y2="6" />
+        <line x1="8" y1="10" x2="10" y2="10" />
+        <line x1="14" y1="10" x2="16" y2="10" />
+        <line x1="8" y1="14" x2="10" y2="14" />
+        <line x1="14" y1="14" x2="16" y2="14" />
+        <rect x="10" y="18" width="4" height="4" />
       </svg>
     )
   }
@@ -27,6 +34,24 @@ function ServiceIcon({ name, color }: { name: string; color: string }) {
         <line x1="9" y1="20" x2="9" y2="22" />
         <line x1="12" y1="20" x2="12" y2="22" />
         <line x1="15" y1="20" x2="15" y2="22" />
+      </svg>
+    )
+  }
+  if (name === 'home-auto') {
+    return (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <circle cx="12" cy="14" r="3" />
+        <line x1="12" y1="11" x2="12" y2="8" />
+      </svg>
+    )
+  }
+  if (name === 'power-up') {
+    return (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        <line x1="18" y1="2" x2="22" y2="2" />
+        <line x1="20" y1="0" x2="20" y2="4" />
       </svg>
     )
   }
@@ -62,6 +87,31 @@ function ServiceIcon({ name, color }: { name: string; color: string }) {
       </svg>
     )
   }
+  if (name === 'lock') {
+    return (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2" />
+        <path d="M7 11V7a5 5 0 0110 0v4" />
+        <circle cx="12" cy="16.5" r="1.5" />
+      </svg>
+    )
+  }
+  if (name === 'certificate') {
+    return (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="8" r="6" />
+        <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
+        <polyline points="9 8 11 10 15 6" />
+      </svg>
+    )
+  }
+  if (name === 'zap') {
+    return (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    )
+  }
   if (name === 'trending') {
     return (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -82,20 +132,20 @@ export default function Services() {
       <div className="max-w-[1280px] mx-auto px-5 md:px-10 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="section-label justify-center">Serviços</div>
+          <div className="section-label justify-center">Áreas de Atuação</div>
           <h2
             className="text-[#F8FAFC] font-black mt-2"
             style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', letterSpacing: '-0.03em', lineHeight: 1.1 }}
           >
-            Serviços de Engenharia Elétrica
+            Engenharia e Instalações Elétricas e Especiais
           </h2>
           <p className="text-[#94A3B8] mt-4 max-w-xl mx-auto" style={{ lineHeight: 1.7 }}>
-            Do diagnóstico à execução — cada trabalho com a assinatura e responsabilidade de um engenheiro eletrotécnico certificado.
+            Do loteamento à domótica, do aumento de potência à certificação — cada projeto com a assinatura e responsabilidade de um engenheiro eletrotécnico credenciado.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map((service) => (
             <div key={service.id} className="service-card">
               <div className={`service-icon-wrap ${service.color !== 'amber' ? service.color : ''}`}>

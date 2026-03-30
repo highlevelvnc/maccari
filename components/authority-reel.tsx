@@ -164,9 +164,9 @@ export default function AuthorityReel() {
         {/* Bottom divider stat bar */}
         <div className={`mt-16 pt-10 border-t border-white/[0.05] grid grid-cols-3 gap-6 fade-up delay-5 ${isVisible ? 'visible' : ''}`}>
           {[
-            { value: '20+', label: 'Anos de experiência', color: '#F59E0B' },
-            { value: '500+', label: 'Instalações realizadas', color: '#F59E0B' },
-            { value: '100%', label: 'Trabalho certificado', color: '#10B981' },
+            { value: '10MW', label: 'Projetos de escala', color: '#F59E0B' },
+            { value: '500+', label: 'Projetos realizados', color: '#F59E0B' },
+            { value: '5', label: 'Credenciações ativas', color: '#10B981' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-black text-3xl md:text-4xl mb-1" style={{ color: stat.color, letterSpacing: '-0.03em' }}>{stat.value}</div>

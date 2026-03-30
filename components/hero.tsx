@@ -109,8 +109,8 @@ export default function Hero() {
                 className="text-[#F8FAFC]"
                 style={{ fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', fontWeight: 900, letterSpacing: '-0.035em', lineHeight: 1.04 }}
               >
-                A sua instalação elétrica{' '}
-                <span className="text-amber-gradient">nas mãos de um engenheiro.</span>
+                Engenharia elétrica{' '}
+                <span className="text-amber-gradient">para projetos que exigem mais.</span>
               </h1>
             </div>
 
@@ -119,15 +119,15 @@ export default function Hero() {
               className={`text-[#94A3B8] fade-up delay-2 ${isVisible ? 'visible' : ''}`}
               style={{ fontSize: '1.08rem', lineHeight: 1.75, maxWidth: '54ch' }}
             >
-              Reparações, instalações e soluções energéticas com rigor técnico e disponibilidade imediata — 24 horas por dia.
+              Loteamentos, edifícios, indústria, domótica, aumento de potência e certificações — com a assinatura de um engenheiro eletrotécnico credenciado DGEG.
             </p>
 
             {/* Trust micro-line */}
             <div className={`flex flex-wrap items-center gap-x-4 gap-y-2 fade-up delay-3 ${isVisible ? 'visible' : ''}`}>
               {[
-                '20 anos de experiência',
-                'Resposta em menos de 1h',
-                'Orçamento sempre gratuito',
+                'Projetos até 10MW de experiência',
+                'Credenciado DGEG n.º 82284',
+                'Resposta imediata',
               ].map((text, i) => (
                 <span key={text} className="flex items-center gap-1.5 text-xs font-medium" style={{ color: '#64748B' }}>
                   {i > 0 && <span className="w-px h-3 bg-[#1E293B]" />}
