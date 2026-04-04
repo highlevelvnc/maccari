@@ -138,7 +138,7 @@ export const PILLARS = [
     icon: 'zap-circle',
   },
   {
-    title: 'Disponível 24H — Resposta Imediata',
+    title: 'Disponível 24 Horas',
     description: 'Emergências elétricas não escolhem hora. Atendimento 24 horas, deslocação rápida na Área Metropolitana de Lisboa. Sem filas de espera, sem burocracia.',
     icon: 'clock',
   },
@@ -175,7 +175,7 @@ export const COVERAGE_ZONES = [
 ]
 
 export const COUNTERS = [
-  { value: 15, suffix: '+', label: 'Anos de experiência' },
+  { value: 20, suffix: '+', label: 'Anos de experiência' },
   { value: 500, suffix: '+', label: 'Projetos realizados' },
   { value: 24, suffix: 'H', label: 'Disponibilidade diária' },
   { value: 100, suffix: '%', label: 'Trabalho certificado' },

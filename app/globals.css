@@ -129,7 +129,7 @@ body {
 .fade-up.delay-6 { transition-delay: 0.6s; }
 
 .status-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--green);
+  width: 8px; height: 8px; border-radius: 50%; background: var(--amber);
   display: inline-block; flex-shrink: 0;
   animation: status-pulse 2.5s cubic-bezier(0.4,0,0.6,1) infinite;
 }
@@ -145,11 +145,11 @@ body {
 
 .badge-cert-premium {
   display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 999px;
-  background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.22);
-  color: #10B981; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.02em; backdrop-filter: blur(8px);
+  background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.22);
+  color: #F59E0B; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.02em; backdrop-filter: blur(8px);
   transition: background 0.2s ease, border-color 0.2s ease;
 }
-.badge-cert-premium:hover { background: rgba(16,185,129,0.13); border-color: rgba(16,185,129,0.38); }
+.badge-cert-premium:hover { background: rgba(245,158,11,0.13); border-color: rgba(245,158,11,0.38); }
 
 .badge-oe-premium {
   display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 999px;
@@ -289,8 +289,8 @@ body {
 
 .badge-cert {
   display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 999px;
-  background: rgba(16,185,129,0.09); border: 1px solid rgba(16,185,129,0.2);
-  font-size: 0.68rem; font-weight: 600; color: #10B981; letter-spacing: 0.03em;
+  background: rgba(245,158,11,0.09); border: 1px solid rgba(245,158,11,0.2);
+  font-size: 0.68rem; font-weight: 600; color: #F59E0B; letter-spacing: 0.03em;
 }
 
 .badge-zone {

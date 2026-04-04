@@ -383,13 +383,13 @@ export default function Founder() {
                 Engenheiro Eletrotécnico
               </span>
               <span className="badge-cert-premium">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 Credenciado DGEG
               </span>
               <span className="badge-cert-premium">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 Membro Ordem dos Engenheiros
@@ -471,7 +471,7 @@ export default function Founder() {
                 <span style={{ color: '#CBD5E1', fontWeight: 600 }}>UFSC</span>, Engenharia Civil pela{' '}
                 <span style={{ color: '#CBD5E1', fontWeight: 600 }}>Estácio de Sá</span> e MBA em Gestão de Projetos pela{' '}
                 <span style={{ color: '#CBD5E1', fontWeight: 600 }}>FGV</span>, Evandro acumula mais de{' '}
-                <span style={{ color: '#F59E0B', fontWeight: 700 }}>15 anos</span> de experiência em grandes projetos de infraestrutura no Brasil e no México.
+                <span style={{ color: '#F59E0B', fontWeight: 700 }}>20 anos</span> de experiência em grandes projetos de infraestrutura no Brasil e no México.
               </p>
               <p style={{ color: '#94A3B8', lineHeight: 1.75, fontSize: '0.95rem' }}>
                 O seu percurso inclui centrais hidroelétricas, parques eólicos e solares, subestações de alta tensão e linhas de transmissão — projetos que exigem o mais alto rigor técnico e responsabilidade formal de engenheiro.

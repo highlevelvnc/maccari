@@ -130,15 +130,15 @@ export default function AuthorityReel() {
               },
               {
                 icon: (
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                   </svg>
                 ),
-                color: 'rgba(16,185,129,0.08)',
-                border: 'rgba(16,185,129,0.16)',
+                color: 'rgba(245,158,11,0.08)',
+                border: 'rgba(245,158,11,0.16)',
                 title: '20+ Anos de Experiência Comprovada',
                 text: 'Duas décadas de intervenções em habitações, comércio e indústria. Diagnóstico preciso, soluções definitivas — não remendos.',
-                accent: '#10B981',
+                accent: '#F59E0B',
               },
             ].map((item, i) => (
               <div
@@ -166,7 +166,7 @@ export default function AuthorityReel() {
           {[
             { value: '10MW', label: 'Projetos de escala', color: '#F59E0B' },
             { value: '500+', label: 'Projetos realizados', color: '#F59E0B' },
-            { value: '5', label: 'Credenciações ativas', color: '#10B981' },
+            { value: '5', label: 'Credenciações ativas', color: '#F59E0B' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-black text-3xl md:text-4xl mb-1" style={{ color: stat.color, letterSpacing: '-0.03em' }}>{stat.value}</div>

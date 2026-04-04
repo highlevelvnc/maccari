@@ -19,7 +19,7 @@ export default function Coverage() {
               Engenharia elétrica em São Domingos de Rana e região
             </h2>
             <p className="text-[#94A3B8] mb-8" style={{ lineHeight: 1.7 }}>
-              Com base em São Domingos de Rana, prestamos serviços em toda a Área Metropolitana de Lisboa. Deslocação rápida, resposta imediata — a disponibilidade 24 horas aplica-se a toda a área de cobertura.
+              Com base em São Domingos de Rana, prestamos serviços em toda a Área Metropolitana de Lisboa. Deslocação rápida — a disponibilidade 24 horas aplica-se a toda a área de cobertura.
             </p>
 
             {/* Zones */}

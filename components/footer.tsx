@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex flex-col gap-1.5 mb-5">
               {Object.values(CREDENTIALS).map((c) => (
                 <span key={c.label} className="flex items-center gap-2 text-xs" style={{ color: '#64748B' }}>
-                  <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#10B981', display: 'inline-block', flexShrink: 0 }} />
+                  <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#F59E0B', display: 'inline-block', flexShrink: 0 }} />
                   <span style={{ color: '#94A3B8' }}>{c.label}</span>
                   <span className="font-mono" style={{ color: '#64748B' }}>n.º {c.number}</span>
                 </span>
@@ -107,13 +107,13 @@ export default function Footer() {
                     width: 7,
                     height: 7,
                     borderRadius: '50%',
-                    background: '#10B981',
+                    background: '#F59E0B',
                     display: 'inline-block',
                     animation: 'status-pulse 2s infinite',
                     flexShrink: 0,
                   }}
                 />
-                <span className="text-[#10B981] font-medium">24 Horas — Disponível</span>
+                <span className="text-[#F59E0B] font-medium">24 Horas — Disponível</span>
               </div>
             </div>
 

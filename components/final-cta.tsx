@@ -25,9 +25,9 @@ export default function FinalCta() {
 
       <div className="max-w-2xl mx-auto px-5 text-center relative z-10">
         {/* Urgency indicator */}
-        <div className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-full" style={{ background: 'rgba(16,185,129,0.08)', border: '1px solid rgba(16,185,129,0.2)' }}>
-          <span className="status-dot" style={{ width: 7, height: 7 }} />
-          <span className="text-xs font-semibold" style={{ color: '#10B981' }}>Disponível agora — resposta imediata</span>
+        <div className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-full" style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)' }}>
+          <span className="status-dot" style={{ width: 7, height: 7, background: '#F59E0B' }} />
+          <span className="text-xs font-semibold" style={{ color: '#F59E0B' }}>Disponível agora — orçamento gratuito</span>
         </div>
 
         <div className="section-label justify-center">Contacto Directo</div>
@@ -41,7 +41,7 @@ export default function FinalCta() {
         </h2>
 
         <p className="text-[#94A3B8] mb-10 max-w-[44ch] mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-          Sem filas de espera, sem burocracia. Um engenheiro eletrotécnico certificado disponível para si — resposta imediata, orçamento gratuito.
+          Sem filas de espera, sem burocracia. Um engenheiro eletrotécnico certificado disponível para si — orçamento gratuito, disponibilidade 24 horas.
         </p>
 
         {/* CTA buttons */}
@@ -73,8 +73,8 @@ export default function FinalCta() {
         {/* Micro trust line */}
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5">
           {[
-            'Resposta em menos de 1 hora',
             'Disponível 24 horas',
+            'Credenciado DGEG n.º 82284',
             'Orçamento gratuito',
           ].map((item, i) => (
             <span key={item} className="flex items-center gap-1.5 text-xs" style={{ color: '#64748B' }}>

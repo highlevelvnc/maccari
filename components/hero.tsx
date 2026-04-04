@@ -109,8 +109,8 @@ export default function Hero() {
                 className="text-[#F8FAFC]"
                 style={{ fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', fontWeight: 900, letterSpacing: '-0.035em', lineHeight: 1.04 }}
               >
-                Engenharia elétrica{' '}
-                <span className="text-amber-gradient">para projetos que exigem mais.</span>
+                Engenharia é responsabilidade{' '}
+                <span className="text-amber-gradient">com nome e número.</span>
               </h1>
             </div>
 
@@ -127,7 +127,7 @@ export default function Hero() {
               {[
                 'Projetos até 10MW de experiência',
                 'Credenciado DGEG n.º 82284',
-                'Resposta imediata',
+                'Orçamento gratuito',
               ].map((text, i) => (
                 <span key={text} className="flex items-center gap-1.5 text-xs font-medium" style={{ color: '#64748B' }}>
                   {i > 0 && <span className="w-px h-3 bg-[#1E293B]" />}
@@ -160,7 +160,7 @@ export default function Hero() {
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-2">
                   <span className="status-dot" />
-                  <span className="text-[11px] font-bold uppercase tracking-[0.13em]" style={{ color: '#10B981' }}>Disponível Agora</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.13em]" style={{ color: '#F59E0B' }}>Disponível Agora</span>
                 </div>
                 <a href="tel:+351913973551" className="text-xs font-medium tabular-nums transition-colors" style={{ color: '#64748B' }}>
                   {BRAND.phone}
@@ -186,8 +186,8 @@ export default function Hero() {
                 {[
                   { value: '20', suffix: '+', label: 'Anos Exp.', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
                   { value: '24', suffix: 'H', label: 'Disponível', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
-                  { value: 'DGEG', suffix: '', label: 'Credenciado', gradient: 'linear-gradient(135deg, #10B981, #34D399)' },
-                  { value: 'O.E.', suffix: '', label: 'Ordem Eng.', gradient: 'linear-gradient(135deg, #10B981, #34D399)' },
+                  { value: 'DGEG', suffix: '', label: 'Credenciado', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
+                  { value: 'O.E.', suffix: '', label: 'Ordem Eng.', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
                 ].map((m) => (
                   <div key={m.label} className="metric-cell-premium">
                     <div className="flex items-end justify-center gap-0.5 mb-1">
@@ -221,7 +221,7 @@ export default function Hero() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
-                  <span className="text-[11px] font-medium" style={{ color: '#94A3B8' }}>Resposta em menos de 1 hora</span>
+                  <span className="text-[11px] font-medium" style={{ color: '#94A3B8' }}>Disponível 24 horas</span>
                 </div>
                 <a
                   href={waLink(WA_MESSAGES.general)}
