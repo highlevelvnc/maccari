@@ -101,20 +101,6 @@ export default function Footer() {
                 <span>{BRAND.addressFull}</span>
               </div>
 
-              <div className="flex items-center gap-2.5 text-sm">
-                <span
-                  style={{
-                    width: 7,
-                    height: 7,
-                    borderRadius: '50%',
-                    background: '#F59E0B',
-                    display: 'inline-block',
-                    animation: 'status-pulse 2s infinite',
-                    flexShrink: 0,
-                  }}
-                />
-                <span className="text-[#F59E0B] font-medium">24 Horas — Disponível</span>
-              </div>
             </div>
 
             <a

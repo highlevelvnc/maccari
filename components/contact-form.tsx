@@ -621,7 +621,7 @@ export default function ContactForm() {
                         lineHeight: '1.5',
                       }}
                     >
-                      Será redirecionado para o WhatsApp. Resposta em menos de 24 horas.
+                      Será redirecionado para o WhatsApp. Entraremos em contacto brevemente.
                     </p>
                   </div>
                 </form>
@@ -743,7 +743,7 @@ export default function ContactForm() {
                   style={{ background: '#25D366', flexShrink: 0 }}
                 />
                 <span style={{ fontSize: '12px', color: 'rgba(248,250,252,0.55)', fontWeight: 500 }}>
-                  Resposta garantida em menos de 24 horas
+                  Orçamento gratuito e sem compromisso
                 </span>
               </div>
             </div>

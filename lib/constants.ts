@@ -117,7 +117,7 @@ export const TRUST_ITEMS = [
   { label: 'DGEG 82284', sub: 'Credenciado' },
   { label: 'Até 10MW', sub: 'Experiência Comprovada' },
   { label: 'Loteamentos', sub: 'Projeto Completo' },
-  { label: '24 Horas', sub: 'Disponível' },
+  { label: 'Projeto Assinado', sub: 'Por Engenheiro' },
   { label: 'Aumento Potência', sub: 'Processo E-Redes' },
 ]
 
@@ -138,8 +138,8 @@ export const PILLARS = [
     icon: 'zap-circle',
   },
   {
-    title: 'Disponível 24 Horas',
-    description: 'Emergências elétricas não escolhem hora. Atendimento 24 horas, deslocação rápida na Área Metropolitana de Lisboa. Sem filas de espera, sem burocracia.',
+    title: 'Atendimento Personalizado',
+    description: 'Cada projeto tem um único responsável: o engenheiro Evandro Maccari. Contacto direto, orçamento transparente e acompanhamento técnico do início ao fim da obra.',
     icon: 'clock',
   },
 ]
@@ -177,6 +177,6 @@ export const COVERAGE_ZONES = [
 export const COUNTERS = [
   { value: 20, suffix: '+', label: 'Anos de experiência' },
   { value: 500, suffix: '+', label: 'Projetos realizados' },
-  { value: 24, suffix: 'H', label: 'Disponibilidade diária' },
+  { value: 5, suffix: '', label: 'Credenciações ativas' },
   { value: 100, suffix: '%', label: 'Trabalho certificado' },
 ]

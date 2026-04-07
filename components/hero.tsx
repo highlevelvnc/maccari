@@ -97,10 +97,6 @@ export default function Hero() {
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                 Ordem dos Engenheiros
               </span>
-              <span className="badge-24h-premium">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
-                24H Disponível
-              </span>
             </div>
 
             {/* H1 */}
@@ -185,7 +181,7 @@ export default function Hero() {
               <div className="grid grid-cols-2 gap-2.5 mb-5">
                 {[
                   { value: '20', suffix: '+', label: 'Anos Exp.', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
-                  { value: '24', suffix: 'H', label: 'Disponível', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
+                  { value: '500', suffix: '+', label: 'Projetos', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
                   { value: 'DGEG', suffix: '', label: 'Credenciado', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
                   { value: 'O.E.', suffix: '', label: 'Ordem Eng.', gradient: 'linear-gradient(135deg, #F59E0B, #FCD34D)' },
                 ].map((m) => (
@@ -220,8 +216,8 @@ export default function Hero() {
               {/* Response + quick CTA */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
-                  <span className="text-[11px] font-medium" style={{ color: '#94A3B8' }}>Disponível 24 horas</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span className="text-[11px] font-medium" style={{ color: '#94A3B8' }}>Orçamento gratuito</span>
                 </div>
                 <a
                   href={waLink(WA_MESSAGES.general)}

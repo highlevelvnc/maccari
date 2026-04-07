@@ -41,7 +41,7 @@ export default function FinalCta() {
         </h2>
 
         <p className="text-[#94A3B8] mb-10 max-w-[44ch] mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-          Sem filas de espera, sem burocracia. Um engenheiro eletrotécnico certificado disponível para si — orçamento gratuito, disponibilidade 24 horas.
+          Sem filas de espera, sem burocracia. Um engenheiro eletrotécnico certificado disponível para si — orçamento gratuito e transparente.
         </p>
 
         {/* CTA buttons */}
@@ -73,9 +73,9 @@ export default function FinalCta() {
         {/* Micro trust line */}
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5">
           {[
-            'Disponível 24 horas',
             'Credenciado DGEG n.º 82284',
             'Orçamento gratuito',
+            'Projeto assinado por engenheiro',
           ].map((item, i) => (
             <span key={item} className="flex items-center gap-1.5 text-xs" style={{ color: '#64748B' }}>
               {i > 0 && <span className="w-1 h-1 rounded-full bg-[#1E293B]" />}
