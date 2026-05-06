@@ -362,3 +362,19 @@ body {
   .fade-up { opacity: 1; transform: none; }
   .hero-glass-card { animation: none; }
 }
+
+/* ── BLOG PROSE ── */
+.blog-prose { color: #CBD5E1; font-size: 1.0625rem; line-height: 1.78; }
+.blog-prose .lead { font-size: 1.18rem; line-height: 1.7; color: #E2E8F0; margin-bottom: 1.6em; font-weight: 400; }
+.blog-prose h2 { color: #F8FAFC; font-size: 1.55rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; margin: 2.2em 0 0.7em; }
+.blog-prose h3 { color: #F8FAFC; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.015em; margin: 1.8em 0 0.5em; }
+.blog-prose p { margin-bottom: 1.15em; }
+.blog-prose ul, .blog-prose ol { margin: 1em 0 1.4em 1.4em; }
+.blog-prose ul li, .blog-prose ol li { margin-bottom: 0.5em; padding-left: 0.3em; }
+.blog-prose ul li::marker { color: #F59E0B; }
+.blog-prose ol li::marker { color: #F59E0B; font-weight: 700; }
+.blog-prose strong { color: #F8FAFC; font-weight: 700; }
+.blog-prose a { color: #F59E0B; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.blog-prose a:hover { color: #FCD34D; }
+.blog-prose blockquote { border-left: 3px solid #F59E0B; padding: 0.4em 0 0.4em 1.2em; margin: 1.5em 0; color: #94A3B8; font-style: italic; }
+.blog-prose code { background: rgba(245,158,11,0.08); color: #FCD34D; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em; font-family: ui-monospace, monospace; }
