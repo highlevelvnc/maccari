@@ -6,10 +6,12 @@ import TrustBar from '@/components/trust-bar'
 import Services from '@/components/services'
 import WhyMaccari from '@/components/why-maccari'
 import EnergyHighlight from '@/components/energy-highlight'
+import Projects from '@/components/projects'
 import Coverage from '@/components/coverage'
 import Testimonials from '@/components/testimonials'
 import AuthorityReel from '@/components/authority-reel'
 import Founder from '@/components/founder'
+import FAQ from '@/components/faq'
 import ContactForm from '@/components/contact-form'
 import FinalCta from '@/components/final-cta'
 import Footer from '@/components/footer'
@@ -26,10 +28,12 @@ export default function Home() {
         <Services />
         <WhyMaccari />
         <EnergyHighlight />
+        <Projects />
         <Coverage />
         <Testimonials />
         <AuthorityReel />
         <Founder />
+        <FAQ />
         <ContactForm />
         <FinalCta />
       </main>

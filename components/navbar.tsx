@@ -21,10 +21,11 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Porquê Maccari', href: '#porque-maccari' },
-    { label: 'O Fundador', href: '#fundador' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Serviços', href: '/#servicos' },
+    { label: 'Porquê Maccari', href: '/#porque-maccari' },
+    { label: 'O Fundador', href: '/#fundador' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Contacto', href: '/#contacto' },
   ]
 
   return (
