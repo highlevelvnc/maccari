@@ -128,6 +128,22 @@ export default function Footer() {
             DGEG 82284 · OE 84420 · ANACOM 84420 · IMPIC 117918-PUB · Cascais, Portugal
           </p>
         </div>
+
+        {/* Credit */}
+        <div className="mt-5 pt-4 flex justify-center" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+          <p className="text-[11px]" style={{ color: '#475569' }}>
+            Site criado por{' '}
+            <a
+              href="https://highlevelmkt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-colors duration-200 hover:text-[#F59E0B]"
+              style={{ color: '#64748B' }}
+            >
+              highlevelmkt.com
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )
