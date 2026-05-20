@@ -102,8 +102,14 @@ export default function FAQ() {
                 </button>
 
                 <div
-                  className="overflow-hidden transition-all duration-300 ease-out"
-                  style={{ maxHeight: open ? 320 : 0, opacity: open ? 1 : 0 }}
+                  className="overflow-hidden"
+                  style={{
+                    maxHeight: open ? 600 : 0,
+                    opacity: open ? 1 : 0,
+                    transition: open
+                      ? 'max-height 0.5s cubic-bezier(0.34, 1.2, 0.64, 1), opacity 0.3s ease 0.05s'
+                      : 'max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease',
+                  }}
                 >
                   <p className="px-6 pb-5 text-[#94A3B8] text-sm md:text-[15px]" style={{ lineHeight: 1.75 }}>
                     {faq.a}

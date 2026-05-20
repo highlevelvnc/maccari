@@ -65,13 +65,13 @@ export default function Projects() {
               className={`group flex flex-col rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 fade-up delay-${i + 1} ${isVisible ? 'visible' : ''}`}
               style={{ background: 'rgba(17,24,39,0.6)', border: '1px solid rgba(255,255,255,0.06)' }}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden ken-burns-host">
                 <Image
                   src={p.image}
                   alt={p.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.07]"
                 />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(10,14,23,0.65) 0%, transparent 50%)' }} />
                 <span className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-[0.13em] px-2.5 py-1 rounded-md backdrop-blur-md"

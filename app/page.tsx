@@ -1,5 +1,6 @@
 import Preloader from '@/components/preloader'
 import WhatsappFab from '@/components/whatsapp-fab'
+import MobileCtaBar from '@/components/mobile-cta-bar'
 import Navbar from '@/components/navbar'
 import Hero from '@/components/hero'
 import TrustBar from '@/components/trust-bar'
@@ -21,6 +22,7 @@ export default function Home() {
     <>
       <Preloader />
       <WhatsappFab />
+      <MobileCtaBar />
       <Navbar />
       <main>
         <Hero />
